@@ -857,8 +857,6 @@ h4 { font-weight: 600; letter-spacing: -.01em; }
 .logo-fastapi { color: #fff; background: #009688; font-size: 17px; }
 .logo-sqlite  { color: #fff; background: #0f80cc; font-size: 10px; }
 .logo-supabase { color: #fff; background: #3ecf8e; }
-.logo-gemini  { color: #fff; background: linear-gradient(135deg, #4285f4, #9b72cb 55%, #d96570); font-size: 18px; }
-
 /* ---------- Process ---------- */
 .process-grid {
   display: grid;
