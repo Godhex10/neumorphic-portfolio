@@ -1,397 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Portfolio</title>
-
-    <!--FONT AWESOME LINK-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-    <!--custom css file link-->
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prince Ebere — Full Stack Web Developer</title>
+  <meta name="description" content="Prince Ugonnaya Ebere is a full-stack web developer building fast, responsive and beautiful websites and web applications." />
+  <meta name="theme-color" content="#eceef4" />
+  <link rel="icon" href="images/logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    
-<!--header section starts-->
-    <header class="header">
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="bg-blobs" aria-hidden="true"><span></span><span></span><span></span></div>
 
-        <div class="user">
-            <img src="image/logo.png" alt="">
-            <h3>Prince Ugonnaya Ebere</h3>
-            <p>Full Stack Web Developer</p>
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home">
+        <span class="brand-mark"><img src="images/logo.png" alt="" /></span>
+        <span><b>Prince Ebere</b><small>Full Stack Web Developer</small></span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+        <a class="button dark nav-cta" href="#contact">Let's Talk <span>↗</span></a>
+      </div>
+      <a class="talk-button" href="#contact">Let's Talk <span>↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="portfolio-shell">
+    <!-- ================= HERO ================= -->
+    <section id="home" class="panel hero">
+      <div class="hero-copy">
+        <p class="eyebrow enter" style="--d:0">HELLO, I'M</p>
+        <h1 class="enter" style="--d:1">Prince Ebere</h1>
+        <h2 class="enter" style="--d:2">Full Stack Web Developer</h2>
+        <p class="intro enter" style="--d:3">I build fast, responsive and beautiful web experiences — from pixel-perfect frontends in HTML, CSS, JavaScript &amp; React to robust backends with PHP and Python (FastAPI).</p>
+        <div class="hero-actions enter" style="--d:4">
+          <a class="button dark" href="#work">View My Work <span>↗</span></a>
+          <a class="button light" href="Prince-Ebere-CV.pdf" download>Download CV <span>↓</span></a>
         </div>
-
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-<!--header section ends-->
-
-<div id="menu-btn" class="fas fa-bars"></div>
-
-<!-- theme toggler-->
-
-<div id="theme-toggler" class="fas fa-moon"></div>
-
-<!--home section starts-->
-
-<section class="home" id="home">
-    <div class="content">
-        <h3>Prince Ugonnaya Ebere</h3>
-        <p>Full Stack Web Developer</p>
-        <a href="Prince-Ebere-CV.pdf" download class="btn">Download CV</a>
-    </div>
-
-    <div class="share">
-        <a href="https://wa.me/+2349056058889?text=Hi...I%20would%20love%20to%20get%20a%20website" class="fa-brands fa-whatsapp"></a>
-        <a href="mailto:ugoprince738@gmail.com" class="fa-regular fa-envelope"></a>
-        <a href="https://www.linkedin.com/in/ugonna-prince/" class="fab fa-linkedin"></a>
-        <!--<a href="https://instagram.com/godhex10" class="fab fa-instagram"></a>-->
-        <a href="https://github.com/Godhex10/" class="fa-brands fa-github"></a>
-    </div>
-
-</section>
-
-<!--home section starts-->
-
-<!--about section starts-->
-
-<section class="about" id="about">
-
-    <h1 class="heading"><span>About</span> me </h1>
-
-    <div class="row">
-
-        <div class="box-container">
-            <div class="box">
-                <h3>3+</h3>
-                <p>Years Of Experience</p>
+        <div class="trusted enter" style="--d:5">
+          <span>Tech I work with</span>
+          <div class="trusted-logos">
+            <div class="trusted-track">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>PHP</span>
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>MySQL</span>
+              <span>Supabase</span>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="box">
-                <h3>11+</h3>
-                <p>Satisfied clients</p>
+      <div class="hero-visual enter" style="--d:2">
+        <div class="portrait-frame" data-tilt>
+          <div class="portrait-glow"></div>
+          <div class="portrait-placeholder"><span>PE</span><small>building the web<br />one pixel at a time</small></div>
+          <!-- Put your photo at images/profile.png (transparent background looks best) -->
+          <img class="portrait-photo" src="images/profile.png" alt="Prince Ebere" onerror="this.remove()" />
+        </div>
+        <div class="float-card experience">
+          <strong><span data-count="3">0</span>+</strong>
+          <span>Years of<br />Experience</span>
+        </div>
+        <div class="float-card impact">
+          <small>Projects Built</small>
+          <strong><span data-count="24">0</span>+</strong>
+          <svg class="sparkline" viewBox="0 0 120 32" aria-hidden="true">
+            <path d="M2 26 L22 18 L40 22 L60 12 L80 16 L100 6 L118 2" />
+          </svg>
+        </div>
+        <div class="orb">✦</div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="panel about">
+      <div>
+        <p class="eyebrow reveal">ABOUT ME</p>
+        <h3 class="reveal">Crafting Interfaces People Love,<br />Backed by Code That <em>Scales</em></h3>
+        <div class="stats neu reveal">
+          <div>
+            <i class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M9 12l2 2 4-4"/></svg></i>
+            <strong><span data-count="3">0</span>+</strong><span>Years Experience</span>
+          </div>
+          <div>
+            <i class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M8 6V4h8v2"/></svg></i>
+            <strong><span data-count="24">0</span>+</strong><span>Projects Built</span>
+          </div>
+          <div>
+            <i class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c1-4 4-5.5 7-5.5s6 1.5 7 5.5"/></svg></i>
+            <strong><span data-count="11">0</span>+</strong><span>Satisfied Clients</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <p>I'm <b>Prince Ugonnaya Ebere</b>, a full-stack web developer with over three years of professional experience designing, developing and deploying web applications. I turn complex requirements into clean, efficient and scalable solutions — with a strong eye for seamless, user-focused experiences on the front end.</p>
+        <p>Beyond code, I've led web development teams and communities, helping educate and motivate developers to build and ship real products. I hold a B.Sc in Computer Science from Abia State University.</p>
+        <a class="button light" href="mailto:ugoprince738@gmail.com">Contact Me <span>↗</span></a>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="panel">
+      <p class="eyebrow reveal">WHAT I DO</p>
+      <h3 class="reveal">Services I Offer</h3>
+      <div class="service-grid">
+        <article class="service-card neu reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></div>
+          <span class="service-number">01</span>
+          <h4>Frontend Development</h4>
+          <p>Responsive, accessible and fast interfaces built with HTML, CSS, JavaScript and React.</p>
+          <a href="#contact" aria-label="Enquire about Frontend Development">↗</a>
+        </article>
+        <article class="service-card neu reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="14" rx="3"/><path d="M4 9h16"/></svg></div>
+          <span class="service-number">02</span>
+          <h4>Web Design &amp; UI/UX</h4>
+          <p>Clean, modern designs shaped around what you want — wireframes, prototypes and polished UI in Figma.</p>
+          <a href="#contact" aria-label="Enquire about Web Design">↗</a>
+        </article>
+        <article class="service-card neu reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6"/></svg></div>
+          <span class="service-number">03</span>
+          <h4>Full-Stack Web Apps</h4>
+          <p>Complete web applications with backends, APIs and databases using PHP, Python (FastAPI), MySQL, PostgreSQL and Supabase.</p>
+          <a href="#contact" aria-label="Enquire about Full-Stack Web Apps">↗</a>
+        </article>
+        <article class="service-card neu reveal">
+          <div class="service-icon"><svg viewBox="0 0 24 24"><rect x="7" y="3" width="10" height="18" rx="2.5"/><path d="M11 18h2"/></svg></div>
+          <span class="service-number">04</span>
+          <h4>Responsive &amp; SEO</h4>
+          <p>Pixel-perfect layouts on every screen size, tuned for performance and on-page &amp; technical SEO.</p>
+          <a href="#contact" aria-label="Enquire about Responsive Design and SEO">↗</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="panel tools">
+      <div class="reveal">
+        <p class="eyebrow">TOOLS &amp; SKILLS</p>
+        <h3>Technologies I Use</h3>
+      </div>
+      <div class="tool-grid">
+        <div class="tool neu reveal"><span class="tool-logo logo-html">5</span><span>HTML</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-css">3</span><span>CSS</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-js">JS</span><span>JavaScript</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-react">⚛</span><span>React</span></div>
+        <div class="tool neu reveal">
+          <span class="tool-logo logo-figma"><svg viewBox="0 0 24 36" aria-hidden="true"><path fill="#f24e1e" d="M6 0h6v12H6a6 6 0 010-12z"/><path fill="#ff7262" d="M12 0h6a6 6 0 010 12h-6z"/><path fill="#a259ff" d="M6 12h6v12H6a6 6 0 010-12z"/><circle fill="#1abcfe" cx="18" cy="18" r="6"/><path fill="#0acf83" d="M6 24h6v6a6 6 0 11-6-6z"/></svg></span>
+          <span>Figma</span>
+        </div>
+        <div class="tool neu reveal"><span class="tool-logo logo-php">php</span><span>PHP</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-python">Py</span><span>Python</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-fastapi">⚡</span><span>FastAPI</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-mysql">My</span><span>MySQL</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-pg">Pg</span><span>PostgreSQL</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-sqlite">SQL</span><span>SQLite</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-supabase">S</span><span>Supabase</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-gemini">✦</span><span>Gemini AI</span></div>
+        <div class="tool neu reveal"><span class="tool-logo logo-git">git</span><span>Git &amp; GitHub</span></div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="work" class="panel">
+      <div class="section-heading">
+        <div class="reveal">
+          <p class="eyebrow">FEATURED PROJECTS</p>
+          <h3>Selected Work</h3>
+        </div>
+        <div class="project-filter neu reveal" role="group" aria-label="Filter projects">
+          <button type="button" class="active" data-filter="live">Live Sites <small>14</small></button>
+          <button type="button" data-filter="other">Other <small>10</small></button>
+          <button type="button" data-filter="all">All <small>24</small></button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <!-- ---------- Live projects (with links) ---------- -->
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://comepayapp.com/" target="_blank" rel="noopener"><img src="images/projects/comepay.png" alt="ComePay website" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>ComePay</h4><span>Fintech Web App</span><p>Digital finance for Nigeria — instant bank transfers, bills, airtime and account opening in minutes.</p></div>
+            <a href="https://comepayapp.com/" target="_blank" rel="noopener" aria-label="Visit ComePay">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://iphone-18-nine.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/iphone18.png" alt="iPhone 18 Pro product page" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>iPhone 18 Pro</h4><span>Product Landing Page</span><p>A polished product page with a size switcher, colour finishes, feature highlights and specs.</p></div>
+            <a href="https://iphone-18-nine.vercel.app/" target="_blank" rel="noopener" aria-label="Visit iPhone 18 Pro">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://astra-five-lac.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/astra.png" alt="Astra accounting dashboard" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Astra</h4><span>Accounting Web App</span><p>Bookkeeping for Nigerian businesses — invoices, VAT &amp; WHT, stock alerts, trial balance, P&amp;L and balance sheet.</p></div>
+            <a href="https://astra-five-lac.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Astra">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://car-weld-one.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/carweld.png" alt="Car. — Cars Sell Center showroom" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Car. — Cars Sell Center</h4><span>Car Showroom Website</span><p>An interactive car showroom — clickable feature hotspots, spec highlights and a live colour switcher in one sleek screen.</p></div>
+            <a href="https://car-weld-one.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Car. — Cars Sell Center">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://hexometer-lovat.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/Hexometer.png" alt="Responsive Weather Application" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Weather Application</h4><span>Web App · API</span><p>A responsive weather app showing live conditions for any city.</p></div>
+            <a href="https://hexometer-lovat.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Weather Application">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://saphire-five.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/Sapphire1.png" alt="NFT Market Place" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>NFT Market Place</h4><span>Web3 Landing Page</span><p>A sleek marketplace experience for discovering and collecting NFTs.</p></div>
+            <a href="https://saphire-five.vercel.app/" target="_blank" rel="noopener" aria-label="Visit NFT Market Place">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://cube-ninaja.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/2.png" alt="Cube Ninja" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Cube Ninja</h4><span>Web Game</span><p>A simple browser game inspired by the popular Cube Ninja.</p></div>
+            <a href="https://cube-ninaja.vercel.app/" target="_blank" rel="noopener" aria-label="Play Cube Ninja">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://blog-mu-black-18.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/blog.png" alt="Responsive Blog Application" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Blog Application</h4><span>Web Application</span><p>A responsive blog web application for publishing and reading articles.</p></div>
+            <a href="https://blog-mu-black-18.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Blog Application">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://fanta-six.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/fanta.png" alt="Fanta Redesign Page" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Fanta Redesign</h4><span>Brand Landing Page</span><p>A bold, playful redesign concept for the Fanta product page.</p></div>
+            <a href="https://fanta-six.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Fanta Redesign">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://sprite-eight.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/sprite.png" alt="Sprite Landing Page" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Sprite Landing Page</h4><span>Brand Landing Page</span><p>A refreshing product landing page for Sprite.</p></div>
+            <a href="https://sprite-eight.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Sprite Landing Page">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://isp-seven.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/isp.png" alt="ISP Codes" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>ISP Codes</h4><span>Business Website</span><p>A modern business website for a tech company.</p></div>
+            <a href="https://isp-seven.vercel.app/" target="_blank" rel="noopener" aria-label="Visit ISP Codes">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://godhex10.github.io/pubclass/" target="_blank" rel="noopener"><img src="images/projects/11.png" alt="Pub Class" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Pub Class</h4><span>Education Website</span><p>A learning platform website for classes and courses.</p></div>
+            <a href="https://godhex10.github.io/pubclass/" target="_blank" rel="noopener" aria-label="Visit Pub Class">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://pen-portfolio.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/12.png" alt="Pen Portfolio" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>Pen Portfolio</h4><span>Portfolio Website</span><p>A personal portfolio website with a clean, creative layout.</p></div>
+            <a href="https://pen-portfolio.vercel.app/" target="_blank" rel="noopener" aria-label="Visit Pen Portfolio">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://godhex.netlify.app/" target="_blank" rel="noopener"><img src="images/projects/12.png" alt="2nd Portfolio" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>2nd Portfolio</h4><span>Portfolio Website</span><p>My previous portfolio with light/dark themes and a sidebar layout.</p></div>
+            <a href="https://godhex.netlify.app/" target="_blank" rel="noopener" aria-label="Visit 2nd Portfolio">↗</a>
+          </div>
+        </article>
+        <article class="project-card neu reveal" data-type="live">
+          <a class="project-art" href="https://portfolio-y3aj.vercel.app/" target="_blank" rel="noopener"><img src="images/projects/7.png" alt="1st Portfolio" loading="lazy" /><span class="badge live">Live</span></a>
+          <div class="project-meta">
+            <div><h4>1st Portfolio</h4><span>Portfolio Website</span><p>Where it all started — my very first portfolio website.</p></div>
+            <a href="https://portfolio-y3aj.vercel.app/" target="_blank" rel="noopener" aria-label="Visit 1st Portfolio">↗</a>
+          </div>
+        </article>
+
+        <!-- ---------- Other projects (no live link) ---------- -->
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/1.png" alt="HEXapp" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>HEXapp</h4><span>Chat Application</span><p>A chatbox web application used for texting.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/3.png" alt="CBT web application" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>CBT Web Application</h4><span>Exam Platform</span><p>An exam web application that can also be used for classes.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/ava4.png" alt="AVA AI assistant" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>AVA</h4><span>AI Assistant</span><p>An artificial intelligence assistant built using the OpenAI API.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/4.png" alt="Food Ordering site" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>Food Ordering Site</h4><span>E-commerce</span><p>Browse menus and place food orders online.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/5.png" alt="E-commerce store" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>E-commerce Store</h4><span>Online Store</span><p>An online store with product listings and a shopping cart.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/movie.png" alt="Movie Platform" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>Movie Platform</h4><span>Streaming UI</span><p>A platform for discovering and browsing movies.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/9.png" alt="Pet Store" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>Pet Store</h4><span>E-commerce</span><p>An online pet store website.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/dashboard.png" alt="Dashboard" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>Dashboard</h4><span>Web Application</span><p>A data dashboard interface.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/6.png" alt="Love Calculator" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>Love Calculator</h4><span>Fun Web App</span><p>A playful love compatibility calculator.</p></div></div>
+        </article>
+        <article class="project-card neu reveal" data-type="other">
+          <div class="project-art"><img src="images/projects/10.png" alt="Various login forms" loading="lazy" /><span class="badge">Offline</span></div>
+          <div class="project-meta"><div><h4>Login Forms</h4><span>UI Components</span><p>A collection of creative login form designs.</p></div></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="panel">
+      <p class="eyebrow reveal">EXPERIENCE</p>
+      <h3 class="reveal">Where I've Worked</h3>
+      <div class="timeline">
+        <article class="job neu reveal">
+          <div class="job-head">
+            <span class="job-icon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M3 10h18M7 15h4"/></svg></span>
+            <div>
+              <h4>Frontend Developer <span class="job-current">Current</span></h4>
+              <a class="job-company" href="https://comepayapp.com/" target="_blank" rel="noopener">ComePay ↗</a>
             </div>
-
-            <div class="box">
-                <h3>190+</h3>
-                <p>Working Hours</p>
+            <span class="job-date">Jun 2026 – Present</span>
+          </div>
+          <ul>
+            <li>Building the ComePay web platform — digital finance for Nigeria, covering bank transfers, bill payments, airtime and account opening.</li>
+            <li>Developing fast, responsive and accessible interfaces that work seamlessly across devices.</li>
+            <li>Collaborating with the product and engineering teams to ship new features and improve the user experience.</li>
+          </ul>
+        </article>
+        <article class="job neu reveal">
+          <div class="job-head">
+            <span class="job-icon"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg></span>
+            <div>
+              <h4>Front-end Web Developer</h4>
+              <span class="job-company">AISOD TECH</span>
             </div>
-
-            <div class="box">
-                <h3>15+</h3>
-                <p>Projects</p>
+            <span class="job-date">Jan 2023 – Mar 2023</span>
+          </div>
+          <ul>
+            <li>Developed responsive, scalable and maintainable front-end code with modern frameworks.</li>
+            <li>Designed and enhanced UI/UX, ensuring cross-browser compatibility and best practices.</li>
+            <li>Integrated new features with backend services and APIs following agile methodologies.</li>
+            <li>Optimised front-end workflows with build pipelines, GitHub version control and cloud deployment.</li>
+          </ul>
+        </article>
+        <article class="job neu reveal">
+          <div class="job-head">
+            <span class="job-icon"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="3"/><path d="M8 6V4h8v2"/></svg></span>
+            <div>
+              <h4>Full-stack Web Developer</h4>
+              <span class="job-company">Freelance · Multiple clients</span>
             </div>
-
-            <div class="content">
-                <h3>My name is <span>Prince Ebere</span></h3>
-                <p>I am a Full-Stack web developer with over three years of experience, proficient in various technologies and modern web development tools. 
-                    I have extensive experience working with web applications, PHP, and MySQL, leveraging them to build dynamic and scalable solutions.
-                    Beyond technical expertise, I have a strong track record of leading web development teams and communities, with a proven ability to motivate, 
-                    educate, and manage professionals in building enterprise software and overseeing successful rollouts.
-                </p>
-                <a href="mailto:ugoprince738@gmail.com" class="btn">Contact me</a>
+            <span class="job-date">Jan 2019 – Present</span>
+          </div>
+          <ul>
+            <li>Lead end-to-end delivery of web solutions — from requirements gathering to deployment.</li>
+            <li>Build and maintain clear documentation to support integration for stakeholders.</li>
+            <li>Create style guides, reusable templates and best practices for consistent delivery.</li>
+            <li>Collaborate with global teams and clients, presenting technical solutions to non-technical stakeholders.</li>
+          </ul>
+        </article>
+        <article class="job neu reveal">
+          <div class="job-head">
+            <span class="job-icon"><svg viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c2 2 10 2 12 0v-5"/></svg></span>
+            <div>
+              <h4>B.Sc Computer Science</h4>
+              <span class="job-company">Abia State University</span>
             </div>
+            <span class="job-date">Education</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <!-- ================= PROCESS ================= -->
+    <section id="process" class="panel process">
+      <p class="eyebrow reveal">MY PROCESS</p>
+      <h3 class="reveal">How I Bring Ideas to Life</h3>
+      <div class="process-grid">
+        <div class="process-step neu reveal">
+          <div class="step-head"><i class="step-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></i><span>01</span></div>
+          <h4>Discover</h4><p>Understanding your goals, users and requirements.</p>
         </div>
-    </div>
-
-    <div class="row">
-        <!--
-        <div class="progress">
-            <h3>Web Design <span>90%</span></h3>
-            <div class="bar bar-1-1"><span></span></div>
-            <h3>Web Development <span>75%</span></h3>
-            <div class="bar bar-1-2"><span></span></div>
-            <h3>UI/UX design <span>80%</span></h3>
-            <div class="bar bar-1-3"><span></span></div>
+        <div class="process-step neu reveal">
+          <div class="step-head"><i class="step-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h13"/></svg></i><span>02</span></div>
+          <h4>Plan</h4><p>Mapping features, structure and the right tech stack.</p>
         </div>
-        -->
-        <div class="progress">
-            <h3>HTML <span>95%</span></h3>
-            <div class="bar bar-2-1"><span></span></div>
-            <h3>CSS <span>85%</span></h3>
-            <div class="bar bar-2-2"><span></span></div>
-            <h3>Javascript <span>65%</span></h3>
-            <div class="bar bar-2-3"><span></span></div>
-             <h3>UI/UX <span>60%</span></h3>
-            <div class="bar bar-2-4"><span></span></div>
-            <h3>PHP and MYSQL <span>70%</span></h3>
-            <div class="bar bar-2-4"><span></span></div>
+        <div class="process-step neu reveal">
+          <div class="step-head"><i class="step-icon"><svg viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z"/><path d="M14 7l3 3"/></svg></i><span>03</span></div>
+          <h4>Design</h4><p>Wireframes and polished UI that feel intuitive.</p>
         </div>
-
-    </div>
-
-</section>
-
-<!--about section ends-->
-
-<!--services section starts-->
-
-<section class="services" id="services">
-
-    <h1 class="heading">my <span>services</span></h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <i class="fas fa-code"></i>
-            <h3>web Design</h3>
-            <p>I am able to offer my clients good web design based on what the client wants.</p>
+        <div class="process-step neu reveal">
+          <div class="step-head"><i class="step-icon"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg></i><span>04</span></div>
+          <h4>Develop</h4><p>Clean, responsive and scalable code, front to back.</p>
         </div>
-
-        <div class="box">
-            <i class="fa-solid fa-globe"></i>
-            <h3>Web Development</h3>
-            <p>Coupled with my Full stack development i will be able to offer my clients good web development in terms of Web Apps, Fully developed websites with backend structures.</p>
+        <div class="process-step neu reveal">
+          <div class="step-head"><i class="step-icon"><svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></i><span>05</span></div>
+          <h4>Test &amp; Launch</h4><p>Testing, optimising and deploying for the best experience.</p>
         </div>
+      </div>
+    </section>
 
-        <div class="box">
-            <i class="fas fa-mobile"></i>
-            <h3>responsive design</h3>
-            <p>My responsive Designs are top Notch and i am able to build responsiveness for all screen sizes.</p>
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="panel contact">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h3>Have a project in mind?<br />Let's build something <em>amazing</em> together.</h3>
+        <div class="contact-details">
+          <a href="mailto:ugoprince738@gmail.com"><i class="neu">✉</i><b>ugoprince738@gmail.com</b></a>
+          <a href="https://wa.me/2349056058889?text=Hi...I%20would%20love%20to%20get%20a%20website" target="_blank" rel="noopener"><i class="neu"><svg viewBox="0 0 24 24"><path d="M4 20l1.3-4A8 8 0 1112 20a8 8 0 01-4-1.1z"/><path d="M9 9.5c.3 2 2.3 4.2 4.5 4.8l1.2-1.1 1.6.8"/></svg></i><b>+234 905 605 8889</b></a>
+          <a href="https://www.linkedin.com/in/ugonna-prince/" target="_blank" rel="noopener"><i class="neu">in</i><b>linkedin.com/in/ugonna-prince</b></a>
+          <a href="https://github.com/Godhex10/" target="_blank" rel="noopener"><i class="neu"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></i><b>github.com/Godhex10</b></a>
         </div>
-        <!--
-        <div class="box">
-            <i class="fas fa-bullhorn"></i>
-            <h3>web design</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse mollitia dolores deserunt sunt, nesciunt vel cupiditate architecto voluptatem tempora repellat, optio dolorem.</p>
+      </div>
+      <form class="contact-form neu reveal">
+        <div class="form-row">
+          <input name="name" aria-label="Your name" placeholder="Your Name" required />
+          <input name="email" aria-label="Your email" type="email" placeholder="Your Email" required />
         </div>
+        <select name="project" aria-label="Your project type">
+          <option value="" disabled selected>Your Project</option>
+          <option>Website</option>
+          <option>Web Application</option>
+          <option>Landing Page</option>
+          <option>Website Redesign</option>
+          <option>Something else</option>
+        </select>
+        <textarea name="message" aria-label="Your message" placeholder="Your Message" rows="4" required></textarea>
+        <button class="button dark" type="submit">Send Message <span>➤</span></button>
+        <p class="form-note">Opens your email app with your message ready to send.</p>
+      </form>
+      <div class="contact-orb" aria-hidden="true"></div>
+    </section>
 
-        <div class="box">
-            <i class="fas fa-search-dollar"></i>
-            <h3>web design</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse mollitia dolores deserunt sunt, nesciunt vel cupiditate architecto voluptatem tempora repellat, optio dolorem.</p>
-        </div>
-        
-        <div class="box">
-            <i class="fab fa-wordpress"></i>
-            <h3>wordpress</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse mollitia dolores deserunt sunt, nesciunt vel cupiditate architecto voluptatem tempora repellat, optio dolorem.</p>
-        </div>
-        -->
-    </div>
-    <!--
-    <p class="serv">I am a Full-Stack web developer with 2+ years of experience. Proficient in working with different technologies. 
-        Recently gained interest in web application, PHP and MYSQL. Knowledgeable in modern tools used in web development. 
-        A skilled leader of web development teams and communities who has the proven ability to motivate, educate, and manage a team of professionals to build enterprise software and manage rollouts. 
-        Prior to web development and web applications. 
-        I am also a very Good Dancer and a Good Basketball Player.
-    </p>
-    -->
-</section>
+    <footer class="panel">
+      <span>© <span id="year">2026</span> Prince Ebere (Godhex). All rights reserved.</span>
+      <span class="socials">
+        <a href="https://wa.me/2349056058889" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.linkedin.com/in/ugonna-prince/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Godhex10/" target="_blank" rel="noopener">GitHub</a>
+      </span>
+    </footer>
+  </main>
 
-<!--services section ends-->
+  <a class="to-top neu" href="#home" aria-label="Back to top">↑</a>
 
-<!--Portfolio section starts-->
-
-<section class="portfolio" id="portfolio">
-
-    <h1 class="heading">My <span>Portfolio</span></h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="image/2.png" alt="">
-            <div class="content">
-                <h3><a href="https://cube-ninaja.vercel.app/" style="color: #000;">Cube Ninja</a></h3>
-                <p>A simple web game similar to the popular game called Cube Ninja</p>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/blog.png" alt="">
-            <div class="content">
-                <h3><a href="https://blog-mu-black-18.vercel.app/" style="color: #000;"> Responsive Blog Application</a></h3>
-                <p>A Responsive blog web application</p>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/Hexometer.png" alt="">
-            <div class="content">
-                <h3><a href="https://hexometer-lovat.vercel.app/" style="color: #000;">Responsive Weather Application</a></h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/Hexgram.png" alt="">
-            <div class="content">
-                <h3><a href="https://social-media2-flax.vercel.app/">Responsive Social Media Webpage</a></h3>
-            </div>
-        </div>
-
-
-         <div class="box">
-            <img src="image/Sapphire1.png" alt="">
-            <div class="content">
-                <h3><a href="https://saphire-five.vercel.app/">NFT Market Place</a></h3>
-            </div>
-        </div>        
-
-        <div class="box">
-            <img src="image/7.png" alt="">
-            <div class="content">
-                <h3><a href="https://portfolio-y3aj.vercel.app/">1st Portfolio</a></h3>
-            </div>
-        </div>
-
-        
-        <div class="box">
-            <img src="image/isp.png" alt="">
-            <div class="content">
-                <h3><a href="https://isp-seven.vercel.app/">ISP Codes</a></h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/fanta.png" alt="">
-            <div class="content">
-                <h3><a href="https://fanta-six.vercel.app/">Fanta Redesign Page</a></h3>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/sprite.png" alt="">
-            <div class="content">
-                <h3><a href="https://sprite-eight.vercel.app/">Sprite Landing Page</a></h3>
-            </div>
-        </div>
-        <div class="box">
-            <img src="image/dashboard.png" alt="">
-            <div class="content">
-                <h3><a href="https://admin-dashboard-chi-khaki.vercel.app/">Admin Dashboard</a></h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/12.png" alt="">
-            <div class="content">
-                <h3><a href="https://godhex.netlify.app/">2nd Portfolio</a></h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/12.png" alt="">
-            <div class="content">
-                <h3><a href="https://pen-portfolio.vercel.app/">Pen Portfolio</a></h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/11.png" alt="">
-            <div class="content">
-                <h3><a href="https://godhex10.github.io/pubclass/">Pub Class</a></h3>
-            </div>
-        </div>
-
-
-        <div class="box">
-            <img src="image/1.png" alt="">
-            <div class="content">
-                <h3>HEXapp</h3>
-                <p>A chatbox web application used for texting</p>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/3.png" alt="">
-            <div class="content">
-                <h3>CBT web application</h3>
-                <p>An exam web application and can also be used for classes</p>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/4.png" alt="">
-            <div class="content">
-                <h3>Food Ordering site</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/5.png" alt="">
-            <div class="content">
-                <h3>E-commerce store</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/6.png" alt="">
-            <div class="content">
-                <h3>Love Calculator</h3>
-            </div>
-        </div>
-
-        
-
-        <div class="box">
-            <img src="image/9.png" alt="">
-            <div class="content">
-                <h3>Pet Store</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/10.png" alt="">
-            <div class="content">
-                <h3>Various Login forms</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/ava4.png" alt="">
-            <div class="content">
-                <h3>AVA : An artficial intelligence built using OpenAI api.</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/dashboard.png" alt="">
-            <div class="content">
-                <h3>Dashboard</h3>
-            </div>
-        </div>
-
-        <div class="box">
-            <img src="image/movie.png" alt="">
-            <div class="content">
-                <h3>Movie Platform</h3>
-            </div>
-        </div>
-        
-    </div>
-
-</section>
-
-<!--Portfolio section ends-->
-
-<!--contact section starts-->
-
-<section class="contact" id="contact">
-
-    <h1 class="heading"><span>Contact</span> Me</h1>
-
-    <form action="">
-        <input type="text" placeholder="Your Name"  class="box">
-        <input type="email" placeholder="Your email"  class="box">
-        <input type="text" placeholder="Subject"  class="box">
-        <textarea name="" id="" class="box" placeholder="Your Message" cols="30" rows="10"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </form>
-
-</section>
-
-<div class="credits">Created by <span>godhex</span> | All rights reserved</div>
-
-<!--contact section ends-->
-
-    <!--custom js file link-->
-    <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>
